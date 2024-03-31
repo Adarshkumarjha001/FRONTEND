@@ -1,1 +1,23 @@
+FADE OUT
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+   <h1>Introduction to jQuery</h1> 
+   <img src="pic.jpeg" alt="SAKET" id="img0" height="400" width="235">
+   <button onclick="func()">FADE</button> 
+</body>
+</html>
+
+function func(){
+    // 3000 miliseconds it takes
+    $("#img0").fadeToggle(3000);
+}
